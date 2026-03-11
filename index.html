@@ -218,25 +218,89 @@
     </div>
   </section>
 
-  <!-- QUOTE SECTION — TALLY EMBEDDED -->
-  <section id="quote" class="quote-section">
-    <div class="section-label">✦ LET'S TALK ✦</div>
-    <h2>Get Your Free Quote</h2>
-    <p class="section-sub">Fill out the form below and we'll get back to you within 24 hours</p>
-    <div class="tally-wrapper">
-      <iframe
-        data-tally-src="https://tally.so/embed/zxzbWa?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-        loading="lazy"
-        width="100%"
-        height="500"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Casino Nights Quote Form"
-        style="border:none; background:transparent;"
-      ></iframe>
-    </div>
-  </section>
+  <!-- QUOTE SECTION — WEB3Forms EMBEDDED -->
+  <!-- QUOTE SECTION -->
+<section id="quote" class="quote-section">
+  <div class="section-label">✦ LET'S TALK ✦</div>
+  <h2>Get Your Free Quote</h2>
+  <p class="section-sub">Fill out the form below and we'll get back to you within 24 hours</p>
+
+  <div class="quote-card">
+    <div class="quote-glow"></div>
+
+    <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="New Casino Nights Quote Request">
+      <input type="hidden" name="from_name" value="Casino Nights Website">
+      <input type="checkbox" name="botcheck" class="hidden-botcheck" tabindex="-1" autocomplete="off">
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+        </div>
+
+        <div class="form-group">
+          <label for="event_date">Event Date</label>
+          <input type="date" id="event_date" name="event_date" required>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="event_type">Event Type</label>
+          <select id="event_type" name="event_type" required>
+            <option value="">Select event type</option>
+            <option>Corporate Event</option>
+            <option>Private Party</option>
+            <option>Fundraiser</option>
+            <option>Birthday Party</option>
+            <option>Wedding / Reception</option>
+            <option>Holiday Party</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="guest_count">Guest Count</label>
+          <select id="guest_count" name="guest_count" required>
+            <option value="">Select guest count</option>
+            <option>10-25</option>
+            <option>25-50</option>
+            <option>50-100</option>
+            <option>100-150</option>
+            <option>150-250</option>
+            <option>250+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="games_requested">Games Requested</label>
+        <input type="text" id="games_requested" name="games_requested" placeholder="Poker, Roulette, Blackjack, Craps...">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Event Details</label>
+        <textarea id="message" name="message" rows="6" placeholder="Tell us about your venue, goals, preferred games, timing, and anything special you'd like included." required></textarea>
+      </div>
+
+      <button type="submit" class="quote-submit">🎲 Request My Quote</button>
+    </form>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -254,9 +318,3 @@
   <div class="floating-cta" id="floatingCta">
     <a href="#quote">🎰 Book Your Casino Night</a>
   </div>
-
-  <!-- TALLY EMBED SCRIPT -->
-  <script async src="https://tally.so/widgets/embed.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
