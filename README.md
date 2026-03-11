@@ -25,7 +25,7 @@ This project intentionally avoids heavy frameworks to keep things simple and rel
 * CSS3
 * Vanilla JavaScript
 * GitHub Pages for hosting
-* Tally.so for form submissions
+* Web3Forms for form submissions
 
 Because everything is static, the site loads quickly and has minimal maintenance requirements.
 
@@ -63,7 +63,7 @@ Once changes are committed and pushed to the main branch, GitHub Pages automatic
 
 ## Contact Form
 
-The inquiry form is powered by Tally.
+The inquiry form is powered by Web3Forms.
 
 Form submissions are delivered via email so event requests can be followed up on quickly.
 
