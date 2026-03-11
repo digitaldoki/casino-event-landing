@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Casino Parties for Events | DealMyEvent</title>
-
+<title>Casino Parties For Events</title>
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
 
 <header class="hero">
 
-<div class="hero-content">
-
-<h1>Casino Parties for Unforgettable Events</h1>
+<h1>Bring the Casino to Your Event</h1>
 
 <p>
-Professional dealers, casino tables, and a Vegas-style experience brought directly to your venue.
+Professional casino tables, real dealers,
+and unforgettable nights.
 </p>
 
-<a href="#quote" class="cta-btn">Get a Quote</a>
-
-</div>
+<a class="cta" href="#quote">Get a Quote</a>
 
 </header>
 
 
-<section class="features">
+<section class="games">
 
-<div class="feature">
-<h3>Professional Dealers</h3>
-<p>Experienced dealers keep games fun and engaging for all skill levels.</p>
+<h2>Casino Tables</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Blackjack</h3>
+<p>Vegas style blackjack tables with professional dealers.</p>
 </div>
 
-<div class="feature">
-<h3>Real Casino Tables</h3>
-<p>Blackjack, roulette, poker, and craps tables that bring Vegas energy to your event.</p>
+<div class="card">
+<h3>Roulette</h3>
+<p>Authentic roulette wheels that guests love.</p>
 </div>
 
-<div class="feature">
-<h3>We Bring the Casino</h3>
-<p>Our team arrives early, sets up everything, and is ready before your guests walk in.</p>
+<div class="card">
+<h3>Poker</h3>
+<p>Texas Hold'em tournaments and cash style play.</p>
+</div>
+
+<div class="card">
+<h3>Craps</h3>
+<p>High energy dice tables that get everyone cheering.</p>
+</div>
+
 </div>
 
 </section>
@@ -56,97 +56,49 @@ Professional dealers, casino tables, and a Vegas-style experience brought direct
 
 <section class="packages">
 
-<h2>Popular Event Packages</h2>
+<h2>Event Packages</h2>
 
-<div class="package-grid">
+<div class="grid">
 
-<div class="package-card">
-<h3>Classic Casino Night</h3>
-<p>2 Tables • Professional Dealers • Chips</p>
-<a href="#quote" class="pkg-btn">Request Pricing</a>
+<div class="card">
+<h3>Classic Night</h3>
+<p>2 tables • 3 hours</p>
 </div>
 
-<div class="package-card">
-<h3>High Roller Package</h3>
-<p>4 Tables • Premium Setup • Tournament Style</p>
-<a href="#quote" class="pkg-btn">Request Pricing</a>
+<div class="card">
+<h3>Deluxe Casino</h3>
+<p>3 tables • dealers included</p>
 </div>
 
-<div class="package-card">
-<h3>Luxury Event Package</h3>
-<p>6+ Tables • Custom Setup • VIP Experience</p>
-<a href="#quote" class="pkg-btn">Request Pricing</a>
+<div class="card">
+<h3>VIP Experience</h3>
+<p>Full casino setup for large events</p>
 </div>
 
 </div>
-
-<p class="package-note">
-Every package includes professional dealers, casino-style chips, and full setup.
-Packages shown are examples. Each event is customized to your crowd, so pricing may vary.
-</p>
 
 </section>
 
 
-<section class="testimonial">
+<section id="quote">
 
-<p>
-"We used DealMyEvent for our charity fundraiser and raised more money than any previous year.
-The atmosphere was electric and the dealers were hilarious and professional."
-</p>
+<h2>Get a Quote</h2>
 
-</section>
+<form action="https://formspree.io/f/YOURFORMID" method="POST">
 
+<input type="text" name="name" placeholder="Name" required>
 
-<section id="quote" class="quote-section">
+<input type="email" name="email" placeholder="Email" required>
 
-<h2>Request a Quote</h2>
+<input type="tel" name="phone" placeholder="Phone">
 
-<!-- TALLY FORM EMBED -->
+<textarea name="message" placeholder="Tell us about your event"></textarea>
 
-<iframe
-data-tally-src="https://tally.so/r/zxzbWa"
-loading="lazy"
-width="100%"
-height="600"
-frameborder="0"
-marginheight="0"
-marginwidth="0"
-title="Casino Event Quote">
-</iframe>
+<button type="submit">Submit</button>
 
-<script>
-var d=document,
-w="https://tally.so/widgets/embed.js",
-v=function(){
-if(typeof Tally!=="undefined"){
-Tally.loadEmbeds();
-}else{
-d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
-e.src=e.dataset.tallySrc;
-});
-}
-};
-if(typeof Tally!=="undefined"){
-v();
-}else if(d.querySelector('script[src="'+w+'"]')==null){
-var s=d.createElement("script");
-s.src=w;
-s.onload=v;
-s.onerror=v;
-d.body.appendChild(s);
-}
-</script>
+</form>
 
 </section>
-
-
-<footer>
-
-<p>© 2026 DealMyEvent.com</p>
-
-</footer>
 
 </body>
-
 </html>
