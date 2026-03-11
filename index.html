@@ -1,104 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Casino Parties For Events</title>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
+<section id="quote" class="quote-section">
+  <div class="section-label">✦ Let's Talk ✦</div>
+  <h2>Get Your Customized Free Quote</h2>
+  <p class="section-sub">Fill out the form below and we'll get back to you about building your custom package within 24-48 hours.</p>
 
-<body>
+  <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+    <input type="hidden" name="subject" value="New Casino Party Quote Request">
+    <input type="hidden" name="from_name" value="Casino Nights Website">
+    <input type="hidden" name="redirect" value="https://YOURDOMAIN.com/thank-you.html">
 
-<header class="hero">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="John Smith" required>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="john@company.com" required>
+      </div>
+    </div>
 
-<h1>Bring the Casino to Your Event</h1>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
+      </div>
+      <div class="form-group">
+        <label>Event Date</label>
+        <input type="date" name="event_date">
+      </div>
+    </div>
 
-<p>
-Professional casino tables, real dealers,
-and unforgettable nights.
-</p>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Event Type</label>
+        <select name="event_type">
+          <option value="">Select event type</option>
+          <option>Corporate Event</option>
+          <option>Fundraiser / Charity</option>
+          <option>Private Party</option>
+          <option>Wedding</option>
+          <option>Birthday Party</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Expected Guest Count</label>
+        <select name="guest_count">
+          <option value="">Select guest count</option>
+          <option>Under 50 guests</option>
+          <option>50–100 guests</option>
+          <option>100–250 guests</option>
+          <option>250–500 guests</option>
+          <option>500+ guests</option>
+        </select>
+      </div>
+    </div>
 
-<a class="cta" href="#quote">Get a Quote</a>
+    <div class="form-group full-width">
+      <label>Tell Us About Your Event</label>
+      <textarea name="message" placeholder="Tell us your vision, venue, any special requests..." rows="5"></textarea>
+    </div>
 
-</header>
-
-
-<section class="games">
-
-<h2>Casino Tables</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Blackjack</h3>
-<p>Vegas style blackjack tables with professional dealers.</p>
-</div>
-
-<div class="card">
-<h3>Roulette</h3>
-<p>Authentic roulette wheels that guests love.</p>
-</div>
-
-<div class="card">
-<h3>Poker</h3>
-<p>Texas Hold'em tournaments and cash style play.</p>
-</div>
-
-<div class="card">
-<h3>Craps</h3>
-<p>High energy dice tables that get everyone cheering.</p>
-</div>
-
-</div>
-
+    <button type="submit" class="submit-btn">🎲 Send My Quote Request</button>
+    <p class="form-note">We typically respond within a few hours during business hours.</p>
+  </form>
 </section>
-
-
-<section class="packages">
-
-<h2>Event Packages</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Classic Night</h3>
-<p>2 tables • 3 hours</p>
-</div>
-
-<div class="card">
-<h3>Deluxe Casino</h3>
-<p>3 tables • dealers included</p>
-</div>
-
-<div class="card">
-<h3>VIP Experience</h3>
-<p>Full casino setup for large events</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="quote">
-
-<h2>Get a Quote</h2>
-
-<form action="https://formspree.io/f/YOURFORMID" method="POST">
-
-<input type="text" name="name" placeholder="Name" required>
-
-<input type="email" name="email" placeholder="Email" required>
-
-<input type="tel" name="phone" placeholder="Phone">
-
-<textarea name="message" placeholder="Tell us about your event"></textarea>
-
-<button type="submit">Submit</button>
-
-</form>
-
-</section>
-
-</body>
-</html>
